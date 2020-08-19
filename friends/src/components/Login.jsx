@@ -55,7 +55,3 @@ export default function Login(props) {
     </div>
   );
 }
-
-//When the request returns, save the token to localStorage,
-//then use the history object in your Login component to navigate
-//your user to your FriendsList route

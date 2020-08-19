@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Login from "./components/Login";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 import FriendsList from "./components/FriendsList";
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
           src="https://images.spoilertv.com/cache/archived-old-shows/friends/season_10/friends-logo-white-type_FULL.jpg"
           alt=""
         />
+       <Link to="/"><h2>Return to login</h2></Link> 
       </header>
       <Switch>
         <Route exact path="/friendslist" component={FriendsList} />
@@ -22,7 +23,3 @@ function App() {
 }
 
 export default App;
-
-//When the request returns, save the token to localStorage,
-//then use the history object in your Login component to navigate
-//your user to your FriendsList route
