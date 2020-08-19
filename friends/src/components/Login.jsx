@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function Login() {
+export default function Login(props) {
   const [credentials, setCredentials] = useState({
     username: "Lambda School",
     password: "i<3Lambd4",
@@ -14,7 +14,8 @@ export default function Login() {
     axios
       .post("http://localhost:5000/api/login", credentials)
       .then((res) => {
-        console.log(res);
+        localStorage.setItem("token", res.data.payload);
+        props.history.push("/FriendsList");
       })
       .catch((error) => {
         console.log("error happend with the post request to API", error);
@@ -54,3 +55,7 @@ export default function Login() {
     </div>
   );
 }
+
+//When the request returns, save the token to localStorage,
+//then use the history object in your Login component to navigate
+//your user to your FriendsList route
