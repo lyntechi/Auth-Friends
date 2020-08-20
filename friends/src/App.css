@@ -1,7 +1,5 @@
 .App {
-
   text-align: center;
-
 }
 
 .App-logo {
@@ -14,47 +12,81 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-h1{
+h1 {
   letter-spacing: 1.8rem;
-  font-size:4rem;
+  font-size: 4rem;
 }
-p{
+h2 {
+  border: 1px solid white;
+  margin: 0 auto;
+  letter-spacing: 0.6rem;
+  width: 50%;
+  
+}
+
+#friendsPicture{
+  width: 24rem;
+  margin-bottom: 2rem;
+}
+p {
   font-size: 1.5rem;
   margin: 0;
+}
+#linkHome {
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
 
 }
-input{
+.friendsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.friendCard {
+  background: rgb(255, 213, 75);
+  color: rgb(0, 0, 0);
+  margin: 2.5rem;
+  padding: 1rem;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+}
+
+input {
   padding: 0.6rem;
   width: 20rem;
   margin-bottom: 1rem;
   background-color: rgba(128, 128, 128, 0);
   border: 1px solid white;
   color: white;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-size: 0.9rem;
-
 }
-img{
+
+img {
   width: 53rem;
   margin-top: 1rem;
 }
-.form{
+.form {
   margin: 6rem;
 }
 
-button{
+button {
   padding: 0.5rem;
   width: 10rem;
   margin-top: 2rem;
   background-color: rgba(255, 255, 255, 0);
   border: solid 2px white;
   font-size: 1.6rem;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   color: ghostwhite;
   letter-spacing: 0.3rem;
-  
 }
-button:hover{
+button:hover {
   background: rgba(248, 248, 248, 0.137);
 }
 .App-header {
